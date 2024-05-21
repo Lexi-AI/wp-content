@@ -2,3 +2,7 @@
 Theme Name: Nemoest Theme
 Template: twentytwentyfour
 */
+
+.nemoest-text-align-right {
+    text-align: right;
+}

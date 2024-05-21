@@ -182,7 +182,8 @@
                 "typography": {
                     "fontFamily": "var(--wp--preset--font-family--heading)",
                     "fontSize": "var(--wp--preset--font-size--large)"
-                }
+                },
+                "css": "& summary{list-style:none; outline-width: 0px; border-bottom: 1px solid #5D5D5D;} & summary::-webkit-details-marker{display:none;} & summary:hover{background-color:#EDEDEB;}"
             }
         },
         "elements": {
@@ -192,7 +193,6 @@
                     "text": "var(--wp--preset--color--contrast-2)"
                 },
                 "border": {
-                    "color": "transparent",
                     "radius": "2rem"
                 },
                 "typography": {
