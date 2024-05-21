@@ -1,0 +1,275 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "title": "Nemoest Theme",
+    "settings": {
+        "color": {
+            "duotone": [
+                {
+                    "colors": ["#000000", "#F4F4F2"],
+                    "slug": "base-contrast",
+                    "name": "Base & Contrast"
+                }
+            ],
+            "gradients": [
+
+            ],
+            "palette": [
+                {
+                    "color": "#F4F4F2",
+                    "name": "Base 1",
+                    "slug": "base"
+                },
+                {
+                    "color": "#EDEDEB",
+                    "name": "Base 2",
+                    "slug": "base-2"
+                },
+                {
+                    "color": "#000000",
+                    "name": "Contrast 1",
+                    "slug": "contrast"
+                },
+                {
+                    "color": "#5D5D5D",
+                    "name": "Contrast 2",
+                    "slug": "contrast-2"
+                }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+					"fontFace": [
+						{
+							"fontFamily": "Inter",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "300 900",
+							"src": [
+								"file:./assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Inter\", sans-serif",
+					"name": "Inter",
+					"slug": "inter"
+				},
+                {
+					"fontFace": [
+						{
+							"fontFamily": "Cardo",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": ["file:./assets/fonts/cardo/cardo_normal_400.woff2"]
+						},
+						{
+							"fontFamily": "Cardo",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": ["file:./assets/fonts/cardo/cardo_italic_400.woff2"]
+						},
+						{
+							"fontFamily": "Cardo",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": ["file:./assets/fonts/cardo/cardo_normal_700.woff2"]
+						}
+					],
+					"fontFamily": "Cardo",
+					"name": "Cardo",
+					"slug": "cardo"
+				},
+                {
+                    "name": "Neue Regrade",
+                    "slug": "body",
+                    "fontFamily": "Neue Regrade, sans-serif",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Neue Regrade",
+                            "fontStyle": "normal italic",
+                            "fontStretch": "normal",
+                            "fontWeight": "300 800",
+                            "src": [
+                                "file:./assets/fonts/neue-regrade/neue-regrade-variable.ttf"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Charter",
+                    "slug": "heading",
+                    "fontFamily": "Charter, serif",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Charter",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "src": [
+                                "file:./assets/fonts/charter/charter-regular.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Charter",
+                            "fontStyle": "italic",
+                            "fontWeight": "400",
+                            "src": [
+                                "file:./assets/fonts/charter/charter-italic.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Charter",
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                            "src": [
+                                "file:./assets/fonts/charter/charter-bold.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Charter",
+                            "fontStyle": "italic",
+                            "fontWeight": "700",
+                            "src": [
+                                "file:./assets/fonts/charter/charter-bold-italic.ttf"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "fontSizes": [
+                {
+                    "name": "Small",
+                    "slug": "small",
+                    "size": "1.25rem"
+                },
+                {
+                    "name": "Medium",
+                    "slug": "medium",
+                    "size": "1.6rem"
+                },
+                {
+                    "name": "Large",
+                    "slug": "large",
+                    "size": "2rem"
+                },
+                {
+                    "name": "Extra Large",
+                    "slug": "x-large",
+                    "size": "2.5rem"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "blocks": {
+            "core/navigation": {
+                "elements": {
+                    "link": {
+                        ":hover": {
+                            "typography": {
+                                "textDecoration": "none"
+                            }
+                        }
+                    }
+                }
+            },
+            "core/separator": {
+                "color": {
+                    "text": "var(--wp--preset--color--contrast-2)"
+                }
+            },
+            "core/details": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--heading)",
+                    "fontSize": "var(--wp--preset--font-size--large)"
+                }
+            }
+        },
+        "elements": {
+            "button": {
+                "color": {
+                    "background": "transparent",
+                    "text": "var(--wp--preset--color--contrast-2)"
+                },
+                "border": {
+                    "color": "transparent",
+                    "radius": "2rem"
+                },
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--heading)",
+                    "fontSize": "var(--wp--preset--font-size--medium)",
+                    "fontWeight": "400"
+                },
+                ":hover": {
+                    "color": {
+                        "background": "var(--wp--preset--color--base-2)",
+                        "text": "var(--wp--preset--color--contrast)"
+                    }
+                },
+                ":focus": {
+                    "color": {
+                        "background": "var(--wp--preset--color--base-2)",
+                        "text": "var(--wp--preset--color--contrast)"
+                    }
+                },
+                ":active": {
+                    "color": {
+                        "background": "tranparent",
+                        "text": "var(--wp--preset--color--contrast)"
+                    }
+                }
+            },
+            "h1": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--x-large)",
+                    "lineHeight": "default"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--large)"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--large)"
+                }
+            },
+            "h4": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--medium)"
+                }
+            },
+            "h5": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--medium)"
+                }
+            },
+            "h6": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--small)"
+                }
+            },
+            "heading": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--heading)"
+                }
+            },
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--contrast-2)"
+                },
+                "typography": {
+                    "textDecoration": "none",
+                    "fontWeight": "500"
+                },
+                ":hover": {
+                    "color": {
+                        "text": "var(--wp--preset--color--contrast)",
+                        "background": "var(--wp--preset--color--base-2)"
+                    }
+                }
+            }
+        }
+    }
+}
