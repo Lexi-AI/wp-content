@@ -6,3 +6,34 @@ Template: twentytwentyfour
 .nemoest-text-align-right {
     text-align: right;
 }
+
+.nemoest-responsive-logo img {
+    height: clamp(1.25rem, 1.25rem + ((1vw - 0.2rem) * 1.25), 2rem);
+    width: auto;
+}
+
+
+/* Classes for applying WordPress spacing presets to height */
+.nemoest-use-spacing-height-1 {
+    height: var(--wp--preset--spacing--10);
+}
+
+.nemoest-use-spacing-height-2 {
+    height: var(--wp--preset--spacing--20);
+}
+
+.nemoest-use-spacing-height-3 {
+    height: var(--wp--preset--spacing--30);
+}
+
+.nemoest-use-spacing-height-4 {
+    height: var(--wp--preset--spacing--40);
+}
+
+.nemoest-use-spacing-height-5 {
+    height: var(--wp--preset--spacing--50);
+}
+
+.nemoest-use-spacing-height-6 {
+    height: var(--wp--preset--spacing--60);
+}
