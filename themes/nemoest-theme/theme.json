@@ -271,5 +271,19 @@
                 }
             }
         }
-    }
+    },
+    "customTemplates": [
+        {
+			"name": "page-no-title",
+			"postTypes": ["page"],
+			"title": "Page No Title"
+		},
+        {
+            "name": "page-only-content",
+            "postTypes": [
+                "page"
+            ],
+            "title": "Page Only Content"
+        }
+    ]
 }
