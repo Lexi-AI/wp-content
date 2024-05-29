@@ -13,6 +13,29 @@ Template: twentytwentyfour
 }
 
 
+/*Styling for Details block, currently badly supported in theme.json*/
+.wp-block-details summary {
+    list-style: none;
+    border-bottom: 1px solid var(--wp--preset--color--contrast-2);
+}
+
+.wp-block-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.wp-block-details summary:hover {
+    background-color: var(--wp--preset--color--base-2);
+}
+.wp-block-details summary:focus {
+    background-color: var(--wp--preset--color--base-2);
+    outline-width: 0; /* Removes the parent theme focus outline */
+}
+
+.wp-block-details[open] summary {
+    font-weight: 700;
+}
+
+
 /* Classes for applying WordPress spacing presets to height */
 .nemoest-use-spacing-height-1 {
     height: var(--wp--preset--spacing--10);
