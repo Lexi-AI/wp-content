@@ -34,6 +34,11 @@
                     "color": "#5D5D5D",
                     "name": "Contrast 2",
                     "slug": "contrast-2"
+                },
+                {
+                    "color": "#403e70",
+                    "name": "Contrast 3",
+                    "slug": "contrast-3"
                 }
             ]
         },
@@ -171,7 +176,8 @@
                             }
                         }
                     }
-                }
+                },
+                "css": "& .current-menu-item{text-decoration:underline;}"
             },
             "core/separator": {
                 "color": {
@@ -179,9 +185,15 @@
                 }
             },
             "core/details": {
-                "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--heading)",
-                    "fontSize": "var(--wp--preset--font-size--large)"
+                "css": "& summary{font-family: var(--wp--preset--font-family--heading);font-size: var(--wp--preset--font-size--large);list-style: none;border-bottom: 1px solid var(--wp--preset--color--contrast-2);} & summary::-webkit-details-marker{display:none;}"
+            },
+            "core/heading": {
+                "elements": {
+                    "link": {
+                        "typography": {
+                            "fontWeight": "inherit"
+                        }
+                    }
                 }
             }
         },
@@ -255,34 +267,10 @@
                 }
             },
             "link": {
-                "color": {
-                    "text": "var(--wp--preset--color--contrast-2)"
-                },
                 "typography": {
-                    "textDecoration": "none",
                     "fontWeight": "500"
-                },
-                ":hover": {
-                    "color": {
-                        "text": "var(--wp--preset--color--contrast)",
-                        "background": "var(--wp--preset--color--base-2)"
-                    }
                 }
             }
         }
-    },
-    "customTemplates": [
-        {
-			"name": "page-no-title",
-			"postTypes": ["page"],
-			"title": "Page No Title"
-		},
-        {
-            "name": "page-only-content",
-            "postTypes": [
-                "page"
-            ],
-            "title": "Page Only Content"
-        }
-    ]
+    }
 }
