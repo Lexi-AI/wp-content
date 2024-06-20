@@ -185,7 +185,7 @@
                 }
             },
             "core/details": {
-                "css": "& summary{font-family: var(--wp--preset--font-family--heading);font-size: var(--wp--preset--font-size--large);list-style: none;border-bottom: 1px solid var(--wp--preset--color--contrast-2);} & summary::marker,summary::-webkit-details-marker{display:none; content: \"\";}"
+                "css": "& summary{font-family: var(--wp--preset--font-family--heading);font-size: var(--wp--preset--font-size--large);display: block;border-bottom: 1px solid var(--wp--preset--color--contrast-2);}"
             },
             "core/heading": {
                 "elements": {
