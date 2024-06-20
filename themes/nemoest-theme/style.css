@@ -12,6 +12,10 @@ Template: twentytwentyfour
     width: auto;
 }
 
+.wp-block-details summary::-webkit-details-marker {
+    display: none;
+}
+
 
 /* Classes for applying WordPress spacing presets to height */
 .nemoest-use-spacing-height-1 {
