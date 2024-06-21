@@ -8,8 +8,14 @@ Template: twentytwentyfour
 }
 
 .nemoest-responsive-logo img {
-    height: clamp(1.25rem, 1.25rem + ((1vw - 0.2rem) * 1.25), 2rem);
+    height: var(--wp--preset--font-size--x-large);
     width: auto;
+    
+}
+@media screen and (min-width: 600px){
+    .nemoest-responsive-logo {
+        padding-bottom: calc(var(--wp--preset--font-size--x-large) * 0.55)
+    }
 }
 
 .wp-block-details summary::-webkit-details-marker {
