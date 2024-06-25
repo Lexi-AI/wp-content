@@ -24,16 +24,16 @@ Template: twentytwentyfour
 
 .nemoest-hero-height {
     min-height: calc(100vh - 40px - var(--wp--preset--font-size--x-large));
-    padding-bottom: calc(40px + var(--wp--preset--font-size--x-large) + var(--wp--preset--spacing--40));
+    padding-bottom: calc(40px + var(--wp--preset--font-size--x-large) + var(--wp--preset--spacing--50));
 }
 body.adminbar .nemoest-hero-height {
     min-height: calc(100vh - 40px - var(--wp--preset--font-size--x-large) - 32px);
-    padding-bottom: calc(40px + var(--wp--preset--font-size--x-large) + var(--wp--preset--spacing--40) + 32px);
+    padding-bottom: calc(40px + var(--wp--preset--font-size--x-large) + var(--wp--preset--spacing--50) + 32px);
 }
 @media screen and (min-width: 600px){
     .nemoest-hero-height {
         min-height: calc(100vh - 40px - var(--wp--preset--font-size--x-large) - 46px);
-        padding-bottom: calc(40px + var(--wp--preset--font-size--x-large) + var(--wp--preset--spacing--40) + 46px);
+        padding-bottom: calc(40px + var(--wp--preset--font-size--x-large) + var(--wp--preset--spacing--50) + 46px);
     }
 }
 
